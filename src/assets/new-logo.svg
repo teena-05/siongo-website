@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="500" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main S curve in green -->
+  <path d="M300 100C260 120 240 150 230 200C220 250 240 280 280 290C320 300 350 280 360 260C370 240 360 220 340 210C320 200 300 210 290 230C280 250 290 270 310 280C330 290 350 280 360 260" 
+        fill="#4CAF50"/>
+  
+  <!-- Bottom curve in orange -->
+  <path d="M290 230C260 280 210 300 170 290C130 280 110 250 120 220C130 190 160 170 200 170C240 170 270 190 290 230" 
+        fill="#FF9800"/>
+  
+  <!-- Top curve in purple -->
+  <path d="M200 170C230 160 260 170 280 190C300 210 310 240 290 270" 
+        fill="#673AB7"/>
+</svg> 
