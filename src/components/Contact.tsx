@@ -34,8 +34,6 @@ const Contact: React.FC = () => {
     }
   }, []);
 
-  // Generate the Google Maps URL with current coordinates
-  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817786832052!2d${coordinates.lng}!3d${coordinates.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzEnMDAuMCJTIDMywrA1NCcwMC4wIkU!5e0!3m2!1sen!2s!4v1709913439607!5m2!1sen!2s`;
 
   return (
     <section id="contact" className="py-20 bg-gray-50">
@@ -60,8 +58,12 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">Phone</h4>
-                  <p className="text-gray-600">+255 758 090 751</p>
-                  <p className="text-gray-600">+255 754 558 922</p>
+                  <p className="text-gray-600">
+                    <a href="tel:+255758090751" className="hover:underline">+255 758 090 751</a>
+                  </p>
+                  <p className="text-gray-600">
+                    <a href="tel:+255754558922" className="hover:underline">+255 754 558 922</a>
+                  </p>
                 </div>
               </div>
               
@@ -71,7 +73,9 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-gray-800">Email</h4>
-                  <p className="text-gray-600">siongomicrofinance@gmail.com</p>
+                  <p className="text-gray-600">
+                    <a href="mailto:siongomicrofinance@gmail.com" className="hover:underline">siongomicrofinance@gmail.com</a>
+                  </p>
                 </div>
               </div>
               
@@ -86,30 +90,10 @@ const Contact: React.FC = () => {
                   {locationError && (
                     <p className="text-yellow-600 text-sm mt-1">{locationError}</p>
                   )}
-                  <p className="text-gray-500 text-sm mt-1">
-                    Coordinates: {coordinates.lat.toFixed(4)}°S, {coordinates.lng.toFixed(4)}°E
-                  </p>
                 </div>
               </div>
             </div>
           </div>
-
-          {/* Map Section */}
-          <div className="bg-white rounded-lg shadow-lg p-4 mb-8">
-            <div className="w-full h-64 rounded-lg overflow-hidden">
-              <iframe
-                src={mapUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen={true}
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="SIONG'O Microfinance Location"
-              ></iframe>
-            </div>
-          </div>
-          
           <div className="bg-green-700 rounded-lg shadow-lg p-8 text-white">
             <h3 className="text-xl font-bold mb-4">Office Hours</h3>
             <div className="space-y-2">
