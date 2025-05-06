@@ -44,7 +44,7 @@ const Navbar: React.FC = () => {
               <img 
                 src={logo} 
                 alt="SIONG'O Logo" 
-                className="h-14 w-14 object-contain"
+                className="h-14 w-14 object-cover"
                 style={{ 
                   filter: 'drop-shadow(0 0 1px rgba(255,255,255,0.2))',
                   transform: 'scale(1.2)'

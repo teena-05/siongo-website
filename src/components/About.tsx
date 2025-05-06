@@ -149,11 +149,11 @@ const About: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center p-6">
                 <div className="relative">
                   <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl">
-                    <img 
-                      src="/mr01.jpg"
-                      alt="Founder of SIONG'O Microfinance" 
-                      className="w-full h-full object-cover"
-                    />
+                  <img 
+                    src="/mr2-min.jpg"
+                    alt="Founder of SIONG'O Microfinance" 
+                    className="w-full h-full object-cover"
+                  />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   </div>
                 </div>
