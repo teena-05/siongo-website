@@ -2,8 +2,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
-// --- Removed Coordinates interface, state, useEffect, and mapUrl ---
-
 const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 bg-gray-50">
