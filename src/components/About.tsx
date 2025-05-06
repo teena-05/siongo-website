@@ -17,18 +17,18 @@ const leadershipTeam = [
     bio: "Mary manages our most valuable asset: our people."
   },
   {
-    name: "Magdalena",
+    name: "James",
     title: "Chief Accountant",
     bio: "Michael ensures our finances are healthy and transparent."
   },
   {
-    name: "James",
+    name: "Magdalena",
     title: "Assistant Accountant",
     bio: "Alice supports the accounting team with dedication and precision."
   },
   {
     name: "Elia Mganga",
-    title: "Loan Officer",
+    title: "Chief Loan Officer",
     bio: "Peter helps clients access the financial support they need."
   },
   {
@@ -150,7 +150,7 @@ const About: React.FC = () => {
                 <div className="relative">
                   <div className="relative h-[300px] rounded-lg overflow-hidden shadow-xl">
                     <img 
-                      src="/mr1.jpg" // Replace with actual founder image
+                      src="/mr01.jpg"
                       alt="Founder of SIONG'O Microfinance" 
                       className="w-full h-full object-cover"
                     />

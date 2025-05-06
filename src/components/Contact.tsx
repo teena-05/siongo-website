@@ -1,40 +1,10 @@
-import React, { useState, useEffect } from 'react';
+// ... existing code ...
+import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 
-interface Coordinates {
-  lat: number;
-  lng: number;
-}
+// --- Removed Coordinates interface, state, useEffect, and mapUrl ---
 
 const Contact: React.FC = () => {
-  const [coordinates, setCoordinates] = useState<Coordinates>({
-    lat: -2.5168,  // Default coordinates for Mirongo
-    lng: 32.8998
-  });
-  const [locationError, setLocationError] = useState<string>('');
-
-  useEffect(() => {
-    // Get current location
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          setCoordinates({
-            lat: position.coords.latitude,
-            lng: position.coords.longitude
-          });
-          setLocationError('');
-        },
-        (error) => {
-          console.error("Error getting location:", error);
-          setLocationError('Unable to get current location. Using default coordinates.');
-        }
-      );
-    } else {
-      setLocationError('Geolocation is not supported by your browser.');
-    }
-  }, []);
-
-
   return (
     <section id="contact" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -87,9 +57,6 @@ const Contact: React.FC = () => {
                   <h4 className="font-medium text-gray-800">Location</h4>
                   <p className="text-gray-600">Main Branch: Mirongo, Nyamagana-Mwanza</p>
                   <p className="text-gray-600">P.O Box 10022, MWANZA-TANZANIA</p>
-                  {locationError && (
-                    <p className="text-yellow-600 text-sm mt-1">{locationError}</p>
-                  )}
                 </div>
               </div>
             </div>
