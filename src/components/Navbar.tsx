@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import logo from '../assets/my-logo.jpg';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -23,12 +26,25 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsOpen(false);
+  const handleNavigation = (section: string) => {
+    if (location.pathname !== '/') {
+      // If we're not on the home page, navigate to home first
+      navigate('/');
+      // Use setTimeout to ensure the navigation happens before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(section);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    } else {
+      // If we're already on the home page, just scroll
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
+    setIsOpen(false);
   };
 
   return (
@@ -39,7 +55,7 @@ const Navbar: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex justify-between items-center">
-          <div className="flex items-center space-x-3">
+          <Link to="/" className="flex items-center space-x-3">
             <div className="flex-shrink-0 bg-black rounded-lg p-1.5 h-14 w-14">
               <img 
                 src={logo} 
@@ -49,34 +65,40 @@ const Navbar: React.FC = () => {
               />
             </div>
             <span className="text-white font-bold text-xl tracking-tight">SIONG'O</span>
-          </div>
+          </Link>
           
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             <button 
-              onClick={() => scrollToSection('home')} 
+              onClick={() => handleNavigation('home')} 
               className="text-white hover:text-green-200 transition-colors font-medium"
             >
               Home
             </button>
             <button 
-              onClick={() => scrollToSection('about')} 
+              onClick={() => handleNavigation('about')} 
               className="text-white hover:text-green-200 transition-colors font-medium"
             >
               About
             </button>
             <button 
-              onClick={() => scrollToSection('services')} 
+              onClick={() => handleNavigation('services')} 
               className="text-white hover:text-green-200 transition-colors font-medium"
             >
               Services
             </button>
             <button 
-              onClick={() => scrollToSection('contact')} 
+              onClick={() => handleNavigation('contact')} 
               className="text-white hover:text-green-200 transition-colors font-medium"
             >
               Contact
             </button>
+            <Link 
+              to="/legal" 
+              className="text-white hover:text-green-200 transition-colors font-medium"
+            >
+              Legal
+            </Link>
           </div>
           
           {/* Mobile Menu Button */}
@@ -95,29 +117,35 @@ const Navbar: React.FC = () => {
           <div className="md:hidden mt-4 bg-green-800 rounded-lg p-4 animate-fadeIn">
             <div className="flex flex-col space-y-4">
               <button 
-                onClick={() => scrollToSection('home')} 
+                onClick={() => handleNavigation('home')} 
                 className="text-white hover:text-green-200 transition-colors text-left py-2 px-4 rounded hover:bg-green-700"
               >
                 Home
               </button>
               <button 
-                onClick={() => scrollToSection('about')} 
+                onClick={() => handleNavigation('about')} 
                 className="text-white hover:text-green-200 transition-colors text-left py-2 px-4 rounded hover:bg-green-700"
               >
                 About
               </button>
               <button 
-                onClick={() => scrollToSection('services')} 
+                onClick={() => handleNavigation('services')} 
                 className="text-white hover:text-green-200 transition-colors text-left py-2 px-4 rounded hover:bg-green-700"
               >
                 Services
               </button>
               <button 
-                onClick={() => scrollToSection('contact')} 
+                onClick={() => handleNavigation('contact')} 
                 className="text-white hover:text-green-200 transition-colors text-left py-2 px-4 rounded hover:bg-green-700"
               >
                 Contact
               </button>
+              <Link 
+                to="/legal" 
+                className="text-white hover:text-green-200 transition-colors text-left py-2 px-4 rounded hover:bg-green-700"
+              >
+                Legal
+              </Link>
             </div>
           </div>
         )}

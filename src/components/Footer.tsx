@@ -1,5 +1,6 @@
 import React from 'react';
-import { CreditCard, Facebook, Twitter, Instagram, Linkedin, Mail, Phone } from 'lucide-react';
+import { CreditCard, Facebook, Twitter, Instagram, Mail, Phone } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const scrollToSection = (id: string) => {
@@ -133,15 +134,12 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} SIONG'O Microfinance Company LTD. All rights reserved.
           </p>
           <div className="flex space-x-6">
-            <a href="#" className="text-green-200 text-sm hover:text-white transition-colors">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-green-200 text-sm hover:text-white transition-colors">
-              Terms of Service
-            </a>
-            <a href="#" className="text-green-200 text-sm hover:text-white transition-colors">
-              Sitemap
-            </a>
+            <Link 
+              to="/legal" 
+              className="text-green-200 text-sm hover:text-white transition-colors"
+            >
+              Privacy Policy & Terms of Service
+            </Link>
           </div>
         </div>
       </div>
