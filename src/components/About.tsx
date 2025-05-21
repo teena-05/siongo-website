@@ -4,37 +4,33 @@ const leadershipTeam = [
   {
     name: "Maginga Mwenge",
     title: "Chief Executive Officer",
-    bio: "John leads the company with a vision for financial inclusion and sustainable growth."
+    bio: "Maginga leads the company with a vision for financial inclusion and sustainable growth."
   },
   {
     name: "Mary",
     title: "Manager",
-    bio: "Jane oversees daily operations and ensures smooth service delivery."
+    bio: "Mary oversees daily operations and ensures smooth service delivery."
   },
   {
     name: "Asha Abdallah",
     title: "Human Resource",
-    bio: "Mary manages our most valuable asset: our people."
+    bio: "Asha manages our most valuable asset: our people."
   },
   {
     name: "James",
     title: "Chief Accountant",
-    bio: "Michael ensures our finances are healthy and transparent."
+    bio: "James ensures our finances are healthy and transparent."
   },
   {
     name: "Magdalena",
     title: "Assistant Accountant",
-    bio: "Alice supports the accounting team with dedication and precision."
+    bio: "Magdalena supports the accounting team with dedication and precision."
   },
-  {
-    name: "Elia Mganga",
-    title: "Chief Loan Officer",
-    bio: "Peter helps clients access the financial support they need."
-  },
+  
   {
     name: "Paulina",
     title: "Secretary",
-    bio: "Susan keeps our office organized and our clients welcomed."
+    bio: "Paulina keeps our office organized and our clients welcomed."
   }
 ];
 
