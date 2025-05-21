@@ -1,5 +1,5 @@
 import React from 'react';
-import { CreditCard, Facebook, Twitter, Instagram, Mail, Phone } from 'lucide-react';
+import { CreditCard, Instagram, Mail, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
@@ -23,12 +23,6 @@ const Footer: React.FC = () => {
               Empowering communities through financial inclusion and sustainable solutionS.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-green-800 p-2 rounded-full hover:bg-green-700 transition-colors">
-                <Facebook className="h-5 w-5 text-green-200" />
-              </a>
-              <a href="#" className="bg-green-800 p-2 rounded-full hover:bg-green-700 transition-colors">
-                <Twitter className="h-5 w-5 text-green-200" />
-              </a>
               <a href="https://instagram.com/siongomicrofinancecompanyltd" target="_blank" rel="noopener noreferrer" className="bg-green-800 p-2 rounded-full hover:bg-green-700 transition-colors">
                 <Instagram className="h-5 w-5 text-green-200" />
               </a>
