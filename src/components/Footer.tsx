@@ -99,7 +99,6 @@ const Footer: React.FC = () => {
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-green-300 mr-3 mt-1" />
                 <div>
-                  <p className="text-green-100">+255 754 558 922</p>
                   <p className="text-green-100">+255 758 090 751</p>
                 </div>
               </li>

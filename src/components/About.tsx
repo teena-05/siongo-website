@@ -210,11 +210,12 @@ const About: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Main Branch</h4>
               <p className="text-gray-600">Mirongo, Nyamagana-Mwanza</p>
+              <p className="text-gray-600">+255 758 090 751</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Morogoro Branch</h4>
               <p className="text-gray-600">Morogoro, Tanzania</p>
-              <p className="text-gray-600">+255 758 090 751</p>
+              <p className="text-gray-600">+2</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Ifakara Branch</h4>
