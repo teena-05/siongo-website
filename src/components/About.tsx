@@ -215,35 +215,42 @@ const About: React.FC = () => {
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Morogoro Branch</h4>
               <p className="text-gray-600">Morogoro, Tanzania</p>
-              <p className="text-gray-600">+2</p>
+              <p className="text-gray-600"></p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Ifakara Branch</h4>
               <p className="text-gray-600">Ifakara, Tanzania</p>
+              <p className="text-gray-600">+255 741 413 275</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Shinyanga Branch</h4>
               <p className="text-gray-600">Shinyanga, Tanzania</p>
+              <p className="text-gray-600">+255 758 090 751</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Mbeya Branch</h4>
               <p className="text-gray-600">Mbeya, Tanzania</p>
+              <p className="text-gray-600">+255 752 719 761</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Mpanda Branch</h4>
               <p className="text-gray-600">Mpanda, Tanzania</p>
+              <p className="text-gray-600">+255 741 491 897</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Tabora Branch</h4>
               <p className="text-gray-600">Tabora, Tanzania</p>
+              <p className="text-gray-600">+255 765 273 044</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Lango Branch</h4>
               <p className="text-gray-600">Mwanza, Tanzania</p>
+              <p className="text-gray-600">+255 765 191 433</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-green-600">
               <h4 className="text-xl font-bold text-gray-800 mb-2">Mkuyuni Branch</h4>
               <p className="text-gray-600">Mwanza, Tanzania</p>
+              <p className="text-gray-600">+255 758 127 838</p>
             </div>
           </div>
         </div>

@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
                     <a href="tel:+255758090751" className="hover:underline">+255 758 090 751</a>
                   </p>
                   <p className="text-gray-600">
-                    <a href="tel:+255754558922" className="hover:underline">+255 754 558 922</a>
+                    <a href="tel:+255758090751" className="hover:underline">+255 758 090 751</a>
                   </p>
                 </div>
               </div>
