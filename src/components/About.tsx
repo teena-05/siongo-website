@@ -14,7 +14,7 @@ const leadershipTeam = [
   {
     name: "Asha Abdallah",
     title: "Human Resource",
-    bio: "Asha manages our most valuable asset: our people."
+    bio: "Asha manages our valuable asset: our people."
   },
   {
     name: "James",
