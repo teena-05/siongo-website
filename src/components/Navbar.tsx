@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
                 style={{ filter: 'drop-shadow(0 0 1px rgba(8, 185, 76, 0.2))' }}
               />
             </div>
-            <span className="text-white font-bold text-xl tracking-tight">SIONG'O</span>
+            <span className="text-white font-bold text-xl tracking-tight">SIONG'O MICROFINANCE COMPANY</span>
           </Link>
           
           {/* Desktop Menu */}
